@@ -34,7 +34,7 @@ searchBtn.addEventListener('click',async function(){
     const nextEvolutionFetch = await fetch(urlChainfetch);
     let dataNewEvo = await nextEvolutionFetch.json();
     console.log(dataNewEvo);
-    if (dataNextEvo.eveolves_from_species === null){
+    if (dataNextEvo.evolves_from_species === null){
         let evoName = dataNewEvo.chain.evolves_to[0].species.name;
         evolutionNameDisplay.innerText = `evolves to or from: ${evoName}`;
 

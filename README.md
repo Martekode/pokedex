@@ -12,8 +12,15 @@ Our hero's first steps were heavy sinds he found clues very quickly but ran in t
 
 ## The first Pocket Monster
 After doing the skeleton work for the display and querry interface he started to actually search for the creatures. He used a method at first that woul let the users search by name. But that gave too few results (only 20). But then he found a way to do it by id and got 1126 results. "So many.." he gasped. the hero than quickly made it so that the name would appear. Mission success... But now for the depiction of the creature itself. That was harder because it didn't give an img of the creature. But it gave another clue inside... He then searched for that clue and got what he wanted. Here the images were stored and by some quick selections knew which one he needed the front_default. And now that displays too. the users are going to be happy.
+
+## Moveset Observatory
+Now that we can find the creatures and display them, it is easy now to set up camp and observe them. The hero got out his binoculars and started looking he saw that the latest data package gives information about their abilities. He made is so it would display 4 of them as the task stated. But the datapackage only contained 2... Here he missread the assignement and he was looking at the wrong data. Its was the moves data that he wanted and got crackin'. He made it so it would display the first 4, but he kept in mind that maybe later on he could make it check if he creature learns it by itself. Those movesets should be more relevant to show sinds the creature will learn it no mather what if it keeps getting stronger.
 ## find out in the next episode of Fantastic Pocket Monsters and Where To Find Them 
 * ~html markup~
 * ~fetching the creatures by id~ 
-* logging them 
-* putting them in own container to later work with
+* ~movesets displayed~
+* ~logging them~
+* ~putting them in own container to later work with~
+* looking into searching by name
+* adding exceptions
+* adding fluff

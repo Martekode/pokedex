@@ -13,6 +13,7 @@ searchBtn.addEventListener('click',async function(){
     console.log(data);
     console.log(data.results[input.value].url);
     nameDisplay.innerText = data.results[input.value].name;
+    
 
     const responseInput = await fetch(data.results[input.value].url);
     let dataInput = await responseInput.json();
@@ -21,9 +22,10 @@ searchBtn.addEventListener('click',async function(){
     imgDisplay.setAttribute('src' , dataInput.sprites.front_default)
     IDDisplay.innerText = `PokéID: ${dataInput.id}`;
 
-    dataInput.abilities.forEach(move =>{
-        pokeAbilitiesDisplay.innerHTML += `<li>${move.ability.name}</li>`;
-    })
+    
+    for (let i = 0 ;i<4;i++){
+        pokeAbilitiesDisplay.innerHTML += `<li>${dataInput.moves[i].move.name}</li>`;
+    }
 })
 
 

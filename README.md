@@ -15,12 +15,16 @@ After doing the skeleton work for the display and querry interface he started to
 
 ## Moveset Observatory
 Now that we can find the creatures and display them, it is easy now to set up camp and observe them. The hero got out his binoculars and started looking he saw that the latest data package gives information about their abilities. He made is so it would display 4 of them as the task stated. But the datapackage only contained 2... Here he missread the assignement and he was looking at the wrong data. Its was the moves data that he wanted and got crackin'. He made it so it would display the first 4, but he kept in mind that maybe later on he could make it check if he creature learns it by itself. Those movesets should be more relevant to show sinds the creature will learn it no mather what if it keeps getting stronger.
+
+## Searching For The Evolutions
+It became rapidly clear that these creatures had different formes. It wasn't tied to their age. Rather,... Its appeared to be tied to their experiance. The more they fought and used their movesetts the faster they would transform. So the hero decided to cattalogue them. He first tried to use the evolutions chain method, which after some time trying didn't work out... You could only search by the id of the creature, but the id fomr the evolution chain didn't match the pokemon id. So after some searching he found out he could use the pokemon species method. There you can search by name, which makes it easier. After some tweeking he came up with a solution that doesn't work completely but still well enough for now. It cattalogues the previous form of the pokemon. Revision is needed with The Towns Grand Wizards.
 ## find out in the next episode of Fantastic Pocket Monsters and Where To Find Them 
 * ~html markup~
 * ~fetching the creatures by id~ 
 * ~movesets displayed~
 * ~logging them~
 * ~putting them in own container to later work with~
-* looking into searching by name
+* ~looking into searching by name~
+* ~displaying evolutions~ revision needed
 * adding exceptions
 * adding fluff

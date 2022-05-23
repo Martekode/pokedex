@@ -1,7 +1,7 @@
 # pokedex
 ======================
 ## The creatures of the forbidden land
-Long ago there ws a forbidden land named Khanto full of majestical creatures with special powers. This land is long lost and forgotten by most.
+Long ago there ws a forbidden land named Kanto full of majestical creatures with special powers. This land is long lost and forgotten by most.
 Our hero, in contrary to the rest of the world, hopes to reignite the torch of knowledge and sets out to a dangerous mission. The task ahead will require the hero to find that forgotten land and log these creatures. Making a display for everyone to see is the end goal. so nobody can ever dispute the existance of this "wanderfull" world. (yes i meen WANDERfull, because we'll wander into uncharted territory).
 
 

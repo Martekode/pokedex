@@ -25,6 +25,9 @@ He assigned an standard pokéball img in the beginning to get rid of the uggly m
 
 ## Annoying insects
 The road to these creatures was tangled with many obstacles, but as usual the bugs were the most fierce. Getting rid of these bugs is hard but step by step it can be done. Squaching one bug at a time. The mime bug has been squached, but not before it tried to trample the hero. It managed to find a way to make every searched creature to be mr mime. But the hero found out what he did wrong and... SPLAT! The bug was gone. The hero made it so that now no mather what u search for, it'll always be lowercase so it is searchable. Uppercase bug = squached. Many more to go. The no evolution Bug Boss, The empty-ID-Bug Boss and the adding of maybe a forms checker... But all in time...
+
+## Disrupting nether
+The hero discovered that when people gave their input that somethimes they didn't know what they were looking for. So how could the interface know it then? Well.. it doesn't, that's why we catch the error and display a text where the name of the creature should be. The user then knows that they gave an invalid input. Now we come to some of the last bosses in this realm (for now). The no evolution checker boss (or no evolution bug boss). That one needs some preperation and some research in the api itself so...Training Arc commense!
 ## find out in the next episode of Fantastic Pocket Monsters and Where To Find Them 
 * ~html markup~
 * ~fetching the creatures by id~ 

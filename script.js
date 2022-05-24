@@ -24,6 +24,9 @@ searchBtn.addEventListener('click',async function(){
         alert('ID is invalid, input changed to "1"');
         inputLowerCase = 1;
     }
+    else if (inputLowerCase== "darmanitan"){
+        inputLowerCase = "darmanitan-standard";
+    }
     
     const response  = await fetch(url+inputLowerCase);
     let data = await response.json().catch(error => {

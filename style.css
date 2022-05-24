@@ -20,7 +20,7 @@ body {
   margin-inline: auto;
   padding: 2em;
   overflow: hidden;
-  background-color: #cc3535;
+  background-color: rgba(158, 6, 6, 0.978);
 }
 
 #container #name {

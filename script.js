@@ -18,6 +18,10 @@ searchBtn.addEventListener('click',async function(){
     if (inputLowerCase == "mister mime" ||inputLowerCase == "mr.mime"||inputLowerCase == "mr.-mime"||inputLowerCase == "mr mime"||inputLowerCase =="mr. mime"||inputLowerCase == "mrmime"){
         inputLowerCase = "mr-mime";
     }
+    else if(inputLowerCase == 0||inputLowerCase > 898 && inputLowerCase <=10000){
+        alert('ID is invalid, input changed to "1"');
+        inputLowerCase = 1;
+    }
     const response  = await fetch(url+inputLowerCase);
     let data = await response.json();
     console.log(data);

@@ -15,6 +15,9 @@ searchBtn.addEventListener('click',async function(){
     evolutionImgDisplay.innerHTML ="";
     evolutionNameDisplay.innerHTML= "";
     let inputLowerCase = input.value.toLowerCase();
+    if (inputLowerCase == "mister mime" || "mr.mime"|| "mr.-mime"|| "mr mime"||"mr. mime"){
+        inputLowerCase = "mr-mime";
+    }
     const response  = await fetch(url+inputLowerCase);
     let data = await response.json();
     console.log(data);

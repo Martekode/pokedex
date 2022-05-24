@@ -18,6 +18,93 @@ body {
   border-radius: 20px;
   margin-inline: auto;
   padding: 2em;
+  overflow: hidden;
   background-color: #cc3535;
+}
+
+#container #name {
+  background-color: #1a991a;
+  margin-inline: auto;
+  height: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5em;
+  border-radius: 10px;
+}
+
+#container #white {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #d7d6d6;
+  margin-inline: auto;
+  width: 35em;
+  height: 20em;
+  border-radius: 5px;
+}
+
+#container #black {
+  width: 25em;
+  height: 15em;
+  margin-inline: auto;
+  background-color: #1a1919;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+}
+
+#container #sprite {
+  width: 10em;
+  height: 10em;
+  display: block;
+  margin-inline: auto;
+}
+
+#container #pokeInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#container #1fr {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+#container #2fr {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+#evolutionSprite {
+  height: auto;
+  width: auto;
+  display: block;
+  margin-inline: auto;
+  border-radius: 10px;
+  background-color: green;
 }
 /*# sourceMappingURL=style.css.map */

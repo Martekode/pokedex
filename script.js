@@ -11,9 +11,11 @@ let evolutionNameDisplay = document.getElementById('evolutionName');
 let evolutionImgDisplay = document.getElementById('evolutionSprite');
 
 searchBtn.addEventListener('click',async function(){
+    evolutionImgDisplay.setAttribute('src',"");
+    imgDisplay.setAttribute('src',"./pokeball-png-45330.png");
+    IDDisplay.innerText = "PokéId";
     pokeAbilitiesDisplay.innerHTML = "";
-    evolutionImgDisplay.innerHTML ="";
-    evolutionNameDisplay.innerHTML= "";
+    evolutionNameDisplay.innerHTML= "evolution name";
     let inputLowerCase = input.value.toLowerCase();
     if (inputLowerCase == "mister mime" ||inputLowerCase == "mr.mime"||inputLowerCase == "mr.-mime"||inputLowerCase == "mr mime"||inputLowerCase =="mr. mime"||inputLowerCase == "mrmime"){
         inputLowerCase = "mr-mime";
@@ -54,7 +56,7 @@ searchBtn.addEventListener('click',async function(){
     console.log(dataNewEvo);
     if (dataNextEvo.evolves_from_species === null){
         let evoName = dataNewEvo.chain.evolves_to[0].species.name;
-        evolutionNameDisplay.innerText = `evolves to: ${evoName}`;
+        evolutionNameDisplay.innerText = `evolves to ${evoName}`;
 
         const evoFetch = await fetch(url + evoName);
         let dataEvo = await evoFetch.json();
@@ -64,7 +66,7 @@ searchBtn.addEventListener('click',async function(){
     }
     else{
         let evoName = dataNextEvo.evolves_from_species.name;
-        evolutionNameDisplay.innerText = `evolves from: ${evoName}`;
+        evolutionNameDisplay.innerText = `evolves from ${evoName}`;
         const evoFetch = await fetch(url + evoName);
         let dataEvo = await evoFetch.json();
         console.log(dataEvo)

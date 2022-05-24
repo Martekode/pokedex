@@ -14,7 +14,8 @@ searchBtn.addEventListener('click',async function(){
     pokeAbilitiesDisplay.innerHTML = "";
     evolutionImgDisplay.innerHTML ="";
     evolutionNameDisplay.innerHTML= "";
-    const response  = await fetch(url+input.value);
+    let inputLowerCase = input.value.toLowerCase();
+    const response  = await fetch(url+inputLowerCase);
     let data = await response.json();
     console.log(data);
     nameDisplay.innerText = data.name;

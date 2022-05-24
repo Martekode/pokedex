@@ -15,7 +15,7 @@ searchBtn.addEventListener('click',async function(){
     evolutionImgDisplay.innerHTML ="";
     evolutionNameDisplay.innerHTML= "";
     let inputLowerCase = input.value.toLowerCase();
-    if (inputLowerCase == "mister mime" ||inputLowerCase == "mr.mime"||inputLowerCase == "mr.-mime"||inputLowerCase == "mr mime"||inputLowerCase =="mr. mime"){
+    if (inputLowerCase == "mister mime" ||inputLowerCase == "mr.mime"||inputLowerCase == "mr.-mime"||inputLowerCase == "mr mime"||inputLowerCase =="mr. mime"||inputLowerCase == "mrmime"){
         inputLowerCase = "mr-mime";
     }
     const response  = await fetch(url+inputLowerCase);

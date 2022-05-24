@@ -22,6 +22,9 @@ It became rapidly clear that these creatures had different formes. It wasn't tie
 ## After the dreams
 After a good night of sleep, the hero started working.. He first changed the way it found the movesets of the creatures because if there were creatures with less then 4 movesets it would work but give errors. So a simple if check well do, should not only work for creatures with 1 moveset but also with 2, 3 or 4. After that the esthetics were important make it look like a, what the hero discovered already existed, pokédex.
 He assigned an standard pokéball img in the beginning to get rid of the uggly missing img decoration (he tried to find something like text-decoration but couldn't find anything like it. :not([src]) was the only thing he found and that didn't work.).
+
+## Annoying insects
+The road to these creatures was tangled with many obstacles, but as usual the bugs were the most fierce. Getting rid of these bugs is hard but step by step it can be done. Squaching one bug at a time. The mime bug has been squached, but not before it tried to trample the hero. It managed to find a way to make every searched creature to be mr mime. But the hero found out what he did wrong and... SPLAT! The bug was gone. The hero made it so that now no mather what u search for, it'll always be lowercase so it is searchable. Uppercase bug = squached. Many more to go. The no evolution Bug Boss, The empty-ID-Bug Boss and the adding of maybe a forms checker... But all in time...
 ## find out in the next episode of Fantastic Pocket Monsters and Where To Find Them 
 * ~html markup~
 * ~fetching the creatures by id~ 
@@ -30,5 +33,6 @@ He assigned an standard pokéball img in the beginning to get rid of the uggly m
 * ~putting them in own container to later work with~
 * ~looking into searching by name~
 * ~displaying evolutions~
+* fixing bugs
 * adding exceptions
 * adding fluff

@@ -7,13 +7,17 @@ body {
   margin: 0px;
   padding: 0px;
   overflow: hidden;
+  background-image: url("./thumb-1920-998181.jpg");
+  opacity: 1;
 }
 
 #container {
   margin-top: 0%;
-  height: 60em;
-  width: 60em;
+  height: 45em;
+  width: 40em;
+  border-radius: 20px;
   margin-inline: auto;
-  background-color: rgba(0, 0, 0, 0.394);
+  padding: 2em;
+  background-color: #cc3535;
 }
 /*# sourceMappingURL=style.css.map */

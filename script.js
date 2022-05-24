@@ -21,11 +21,18 @@ searchBtn.addEventListener('click',async function(){
     
     imgDisplay.setAttribute('src' , data.sprites.front_default);
     IDDisplay.innerText = `PokéID: ${data.id}`;
-
-    
-    for (let i = 0 ;i<4;i++){
-        pokeAbilitiesDisplay.innerHTML += `<li>${data.moves[i].move.name}</li>`;
+    console.log(data.moves)
+    if (data.moves.length >=4){
+        for (let i = 0 ;i<4;i++){
+            pokeAbilitiesDisplay.innerHTML += `<li>${data.moves[i].move.name}</li>`;
+        }
     }
+    else{
+        for(let i =0; i<data.moves.length;i++){
+            pokeAbilitiesDisplay.innerHTML += `<li>${data.moves[i].move.name}</li>`;
+        }
+    }
+    
 
     const nextEvoUrlFetch = await fetch(evoUrl+data.name);
     let dataNextEvo = await nextEvoUrlFetch.json();
@@ -36,7 +43,7 @@ searchBtn.addEventListener('click',async function(){
     console.log(dataNewEvo);
     if (dataNextEvo.evolves_from_species === null){
         let evoName = dataNewEvo.chain.evolves_to[0].species.name;
-        evolutionNameDisplay.innerText = `evolves to or from: ${evoName}`;
+        evolutionNameDisplay.innerText = `evolves to: ${evoName}`;
 
         const evoFetch = await fetch(url + evoName);
         let dataEvo = await evoFetch.json();
@@ -46,7 +53,7 @@ searchBtn.addEventListener('click',async function(){
     }
     else{
         let evoName = dataNextEvo.evolves_from_species.name;
-        evolutionNameDisplay.innerText = `evolves to or from: ${evoName}`;
+        evolutionNameDisplay.innerText = `evolves from: ${evoName}`;
         const evoFetch = await fetch(url + evoName);
         let dataEvo = await evoFetch.json();
         console.log(dataEvo)

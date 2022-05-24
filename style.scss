@@ -22,11 +22,12 @@ body{
 
     background-color: rgb(204, 53, 53);
     #name{
-        background-color: rgb(26, 153, 26);
+        color: azure;
         margin-inline:auto;
         height: auto;
         width: fit-content;
-        padding: 0.5em;
+        margin-top: unset;
+        margin-bottom: unset;
         border-radius:10px;
     }
     #white{

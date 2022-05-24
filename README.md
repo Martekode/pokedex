@@ -19,7 +19,7 @@ Now that we can find the creatures and display them, it is easy now to set up ca
 ## Searching For The Evolutions
 It became rapidly clear that these creatures had different formes. It wasn't tied to their age. Rather,... Its appeared to be tied to their experiance. The more they fought and used their movesetts the faster they would transform. So the hero decided to cattalogue them. He first tried to use the evolutions chain method, which after some time trying didn't work out... You could only search by the id of the creature, but the id fomr the evolution chain didn't match the pokemon id. So after some searching he found out he could use the pokemon species method. There you can search by name, which makes it easier. After some tweeking he came up with a solution that doesn't work completely but still well enough for now. It cattalogues the previous form of the pokemon. It later got fixed due to spelling mistake....
 
-## After the drams
+## After the dreams
 After a good night of sleep, the hero started working.. He first changed the way it found the movesets of the creatures because if there were creatures with less then 4 movesets it would work but give errors. So a simple if check well do, should not only work for creatures with 1 moveset but also with 2, 3 or 4. After that the esthetics were important make it look like a, what the hero discovered already existed, pokédex.
 He assigned an standard pokéball img in the beginning to get rid of the uggly missing img decoration (he tried to find something like text-decoration but couldn't find anything like it. :not([src]) was the only thing he found and that didn't work.).
 ## find out in the next episode of Fantastic Pocket Monsters and Where To Find Them 

@@ -22,8 +22,11 @@ searchBtn.addEventListener('click',async function(){
         alert('ID is invalid, input changed to "1"');
         inputLowerCase = 1;
     }
+    
     const response  = await fetch(url+inputLowerCase);
-    let data = await response.json();
+    let data = await response.json().catch(error => {
+        nameDisplay.innerText = "that's an invalid pokemon name or id";
+    });
     console.log(data);
     nameDisplay.innerText = data.name;
     

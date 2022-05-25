@@ -32,6 +32,58 @@ searchBtn.addEventListener('click',async function(){
     let data = await response.json().catch(error => {
         nameDisplay.innerText = "that's an invalid pokemon name or id";
     });
+    console.log(data.types[0].type.name)
+    if (data.types[0].type.name == "fire"){
+        document.getElementById('black').style.backgroundColor = "orange";
+    }
+    else if (data.types[0].type.name == "water"){
+        document.getElementById('black').style.backgroundColor = "blue";
+    }
+    else if (data.types[0].type.name == "electric"){
+        document.getElementById('black').style.backgroundColor = "yellow";
+    }
+    else if (data.types[0].type.name == "grass"){
+        document.getElementById('black').style.backgroundColor = "green";
+    }
+    else if (data.types[0].type.name == "ice"){
+        document.getElementById('black').style.backgroundColor = "lightblue";
+    }
+    else if (data.types[0].type.name == "fighting"){
+        document.getElementById('black').style.backgroundColor = "brown";
+    }
+    else if (data.types[0].type.name == "poison"){
+        document.getElementById('black').style.backgroundColor = "purple";
+    }
+    else if (data.types[0].type.name == "ground"){
+        document.getElementById('black').style.backgroundColor = "burlywood";
+    }
+    else if (data.types[0].type.name == "flying"){
+        document.getElementById('black').style.backgroundColor = "cyan";
+    }
+    else if (data.types[0].type.name == "psychic"){
+        document.getElementById('black').style.backgroundColor = "pink";
+    }
+    else if (data.types[0].type.name == "bug"){
+        document.getElementById('black').style.backgroundColor = "lightgreen";
+    }
+    else if (data.types[0].type.name == "rock"){
+        document.getElementById('black').style.backgroundColor = "chocolate";
+    }
+    else if (data.types[0].type.name == "ghost"){
+        document.getElementById('black').style.backgroundColor = "blueviolet";
+    }
+    else if (data.types[0].type.name == "dark"){
+        document.getElementById('black').style.backgroundColor = "black";
+    }
+    else if (data.types[0].type.name == "dragon"){
+        document.getElementById('black').style.backgroundColor = "cadetblue";
+    }
+    else if (data.types[0].type.name == "steel"){
+        document.getElementById('black').style.backgroundColor = "aliceblue";
+    }
+    else if (data.types[0].type.name == "fairy"){
+        document.getElementById('black').style.backgroundColor = "fuchsia";
+    }
     console.log(data);
     nameDisplay.innerText = data.name;
     

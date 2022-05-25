@@ -83,6 +83,10 @@ searchBtn.addEventListener('click',async function(){
     else if (data.types[0].type.name == "fairy"){
         document.getElementById('black').style.backgroundColor = "fuchsia";
     }
+    else if (data.types[0].type.name == "normal"){
+        document.getElementById('black').style.backgroundColor = "grey";
+    }
+    
     console.log(data);
     nameDisplay.innerText = data.name;
     

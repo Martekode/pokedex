@@ -50,14 +50,18 @@ searchBtn.addEventListener('click',async function(){
     }
     
 
-    const nextEvoUrlFetch = await fetch(evoUrl+data.name);
+    const nextEvoUrlFetch = await fetch(evoUrl+data.id);
     let dataNextEvo = await nextEvoUrlFetch.json();
     console.log(dataNextEvo);
+    console.log('datanextevo');
     const urlChainfetch = dataNextEvo.evolution_chain.url;
     const nextEvolutionFetch = await fetch(urlChainfetch);
     let dataNewEvo = await nextEvolutionFetch.json();
     console.log(dataNewEvo);
+    console.log('newevo');
+    console.log(dataNextEvo);
     if (dataNextEvo.evolves_from_species === null){
+        if (dataNewEvo.chain.evolves_to[0]){
         let evoName = dataNewEvo.chain.evolves_to[0].species.name;
         evolutionNameDisplay.innerText = `evolves to ${evoName}`;
 
@@ -65,6 +69,10 @@ searchBtn.addEventListener('click',async function(){
         let dataEvo = await evoFetch.json();
         console.log(dataEvo)
         evolutionImgDisplay.setAttribute('src' , dataEvo.sprites.front_default);
+        
+        }else{
+            evolutionNameDisplay.innerText="no evo";
+        }
         
     }
     else{

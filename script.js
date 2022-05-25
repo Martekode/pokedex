@@ -16,19 +16,18 @@ searchBtn.addEventListener('click',async function(){
     IDDisplay.innerText = "PokéId";
     pokeAbilitiesDisplay.innerHTML = "";
     evolutionNameDisplay.innerHTML= "evolution name";
-    let inputLowerCase = input.value.toLowerCase();
-    if (inputLowerCase == "mister mime" ||inputLowerCase == "mr.mime"||inputLowerCase == "mr.-mime"||inputLowerCase == "mr mime"||inputLowerCase =="mr. mime"||inputLowerCase == "mrmime"){
-        inputLowerCase = "mr-mime";
-    }
-    else if(inputLowerCase == 0||inputLowerCase > 898 && inputLowerCase <=10000){
+    let inputLowerCase = input.value.replace(/\s+/g, '-').toLowerCase();
+    let inputLowerCaseFiltered = inputLowerCase.replace(/\.+/g,'');
+    console.log(inputLowerCaseFiltered);
+    if(inputLowerCaseFiltered == 0||inputLowerCaseFiltered > 898 && inputLowerCaseFiltered <=10000){
         alert('ID is invalid, input changed to "1"');
-        inputLowerCase = 1;
+        inputLowerCaseFiltered = 1;
     }
-    else if (inputLowerCase== "darmanitan"){
-        inputLowerCase = "darmanitan-standard";
+    else if (inputLowerCaseFiltered== "darmanitan"){
+        inputLowerCaseFiltered = "darmanitan-standard";
     }
     
-    const response  = await fetch(url+inputLowerCase);
+    const response  = await fetch(url+inputLowerCaseFiltered);
     let data = await response.json().catch(error => {
         nameDisplay.innerText = "that's an invalid pokemon name or id";
     });

@@ -28,6 +28,10 @@ The road to these creatures was tangled with many obstacles, but as usual the bu
 
 ## Disrupting nether
 The hero discovered that when people gave their input that somethimes they didn't know what they were looking for. So how could the interface know it then? Well.. it doesn't, that's why we catch the error and display a text where the name of the creature should be. The user then knows that they gave an invalid input. Now we come to some of the last bosses in this realm (for now). The no evolution checker boss (or no evolution bug boss). That one needs some preperation and some research in the api itself so...Training Arc commense!
+
+## The no-evo Boss
+After a long battle, early in the morning, the hero figured out how to filter through the data about the evolution. He made a checker if there are evolves_from evolutions and if there are evolves_to evolutions. If the first one returnes fasle it checks the second and if that one returnes false, then it will display " no evo". The boss was not too hard. Just alot of navigating through the info i got back up until now. The code that has been written is very unclean (dirty). Hard to read for others. While it doesn't really mather right now, The hero should look into cleaner structure of thhe code in the future. He has to learn to use functions with parameters and classes and objects so that it is cleaner. This is going to be a big step and it feels like starting from scratch again. The hero felt glad he was able to do the task and deliver the creatures to the world. However he recognises the mistakes made and sees how to improve. But with seeing the improvement needed also comes nervousness with the pressure to improve.
+Watch for the next episode.
 ## find out in the next episode of Fantastic Pocket Monsters and Where To Find Them 
 * ~html markup~
 * ~fetching the creatures by id~ 

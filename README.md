@@ -41,5 +41,5 @@ Watch for the next episode.
 * ~looking into searching by name~
 * ~displaying evolutions~
 * fixing bugs
-* adding exceptions
+* ~adding exceptions~
 * adding fluff
